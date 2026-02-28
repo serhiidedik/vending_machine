@@ -2,8 +2,6 @@
 
 source 'https://rubygems.org'
 
-gem 'bigdecimal', '~> 3.3', '>= 3.3.1'
-gem 'pry'
 gem 'rake'
 gem 'rspec'
 gem 'rubocop'
