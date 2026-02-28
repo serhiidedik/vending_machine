@@ -1,1 +1,1 @@
-rspec spec/
+rspec spec/ --color --format documentation

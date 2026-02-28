@@ -2,6 +2,12 @@
 
 require 'simplecov'
 
+$LOAD_PATH.unshift File.expand_path('../lib', __dir__)
+
+Dir.glob(File.join(__dir__, '../lib/**/*.rb')).sort.each do |file|
+  require file
+end
+
 RSpec.configure do |config|
   SimpleCov.start
 

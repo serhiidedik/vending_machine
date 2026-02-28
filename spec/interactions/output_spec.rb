@@ -3,10 +3,7 @@
 require 'stringio'
 require 'ostruct'
 
-require_relative '../spec_helper'
-require_relative '../../lib/vending_machine/models/inventory'
-require_relative '../../lib/vending_machine/models/product'
-require_relative '../../lib/vending_machine/interactions/output'
+require 'spec_helper'
 
 RSpec.describe VendingMachine::Interactions::Output do
   let(:io) { StringIO.new }

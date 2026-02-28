@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
 require 'ostruct'
-require_relative '../spec_helper'
-require_relative '../../lib/vending_machine/models/till'
+require 'spec_helper'
 
 RSpec.describe VendingMachine::Models::Till do
   let(:coin_25) { OpenStruct.new(value: 0.25, quantity: 10) }
