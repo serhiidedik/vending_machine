@@ -1,0 +1,32 @@
+welcome_message: 'Welcome to vending machine'
+header:
+  product:
+    name: 'Product'
+  price:
+    name: 'Price'
+  quantity:
+    name: 'Quantity'
+messages:
+  selected: 'Selected'
+  balance: 'Current Balance'
+  change: 'Your change coins:'
+  canceled: 'Operation is canceled'
+  refund: 'Returning your coins'
+  unacceptable: 'Returning unacceptable coins'
+  insert: 'Inserted coin'
+  done: 'Enjoy your'
+  error: '>>> (error):'
+  info: '?'
+  success: '(operation result):'
+  not_found: 'Product is not found'
+  out_of_stock: 'Sorry, this product is out of stock.'
+  insufficient_funds: 'Not enough money inserted.'
+  insufficient_change: 'Machine cannot provide change.'
+  no_product_selected: 'Please select a product first.'
+  exit: 'Closing app'
+instructions:
+  selection: "Select product e.g.: 'cola'"
+  insertion: "Insert coins e.g.: '25/.../500'"
+  buy: "Finish operation e.g.: 'buy'"
+  cancel: "Cancel operation e.g.: 'cancel' / 'exit'"
+  menu: "Show menu e.g.: 'menu'"
