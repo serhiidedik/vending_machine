@@ -14,11 +14,11 @@ bundle install
 ### Application usage
 
 ```bash
-ruby vending.rb
+sh bin/vending.sh
 ```
 
 ### Run tests
 
 ```bash
-rspec spec/
+sh bin/tests.sh
 ```
