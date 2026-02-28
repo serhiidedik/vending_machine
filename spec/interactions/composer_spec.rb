@@ -1,10 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../spec_helper'
-require_relative '../../lib/vending_machine/models/inventory'
-require_relative '../../lib/vending_machine/models/till'
-require_relative '../../lib/vending_machine/models/product'
-require_relative '../../lib/vending_machine/interactions/composer'
+require 'spec_helper'
 
 RSpec.describe VendingMachine::Interactions::Composer do
   let(:inventory) { instance_double(VendingMachine::Models::Inventory) }

@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../spec_helper'
-require_relative '../../lib/vending_machine/models/product'
+require 'spec_helper'
 
 RSpec.describe VendingMachine::Models::Product do
   subject(:product) { described_class.new(name: 'Coca Cola', price: 2.5) }

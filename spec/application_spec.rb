@@ -1,9 +1,6 @@
 # frozen_string_literal: true
 
 require 'spec_helper'
-require_relative '../lib/vending_machine/application'
-require_relative '../lib/vending_machine/interactions/output'
-require_relative '../lib/vending_machine/interactions/composer'
 
 RSpec.describe VendingMachine::Application do
   let(:output) { instance_double(VendingMachine::Interactions::Output) }
