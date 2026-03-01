@@ -11,3 +11,6 @@ This project simulates a real-world vending machine: handling product selection,
 
 ## Test coverage (simplecov)
 ![Coverage Badge](coverage/coverage_badge_total.svg)
+
+## Usage example
+<img width="1194" height="718" alt="image" src="https://github.com/user-attachments/assets/cb6e01e7-eaef-4afa-b5e9-e27ddbe9173c" />
