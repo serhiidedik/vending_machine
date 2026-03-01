@@ -8,3 +8,6 @@ This project simulates a real-world vending machine: handling product selection,
 
 * [Task description](./docs/task-description.md) 
 * [Technical description](./docs/technical-description.md)
+
+## Test coverage (simplecov)
+![Coverage Badge](coverage/coverage_badge_total.svg)

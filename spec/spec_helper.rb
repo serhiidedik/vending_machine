@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'simplecov'
+require 'simplecov_small_badge'
 
 $LOAD_PATH.unshift File.expand_path('../lib', __dir__)
 
@@ -9,7 +10,17 @@ Dir.glob(File.join(__dir__, '../lib/**/*.rb')).sort.each do |file|
 end
 
 RSpec.configure do |config|
-  SimpleCov.start
+  SimpleCov.formatters =
+    SimpleCov::Formatter::MultiFormatter.new(
+      [
+        SimpleCov::Formatter::HTMLFormatter,
+        SimpleCovSmallBadge::Formatter
+      ]
+    )
+
+  SimpleCov.start do
+    add_filter('/spec/')
+  end
 
   config.expect_with :rspec do |expectations|
     expectations.include_chain_clauses_in_custom_matcher_descriptions = true
