@@ -46,11 +46,12 @@ module VendingMachine
       case input
       when 'buy' then composer.buy
       when 'cancel' then composer.cancel
-      when 'help', '?', '' then output.render_help
+      when 'help', '?' then output.render_help
       when 'menu' then output.render_menu
       # when 'till' then { status: :success, message: :info, data: till.coins }
       when 'till' then output.render_till_coins(coins: till.coins)
-      when /\A([0-9]+)\z/ then composer.add_coin(input.to_i)
+      when /\A[0-9]+(?:\.[0-9]{1,2})?\z/ then composer.add_coin(input)
+      when '' then nil
       else composer.select_product(input)
       end
     end

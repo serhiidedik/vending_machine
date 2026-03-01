@@ -13,7 +13,9 @@ module VendingMachine
         @selected_product = nil
       end
 
-      def add_coin(cents)
+      def add_coin(user_input)
+        cents = (user_input.to_f * 100.0).to_i
+
         return { status: :error, message: :unacceptable, data: cents } unless till.acceptable_denomination?(cents)
 
         inserted_coins[cents] += 1

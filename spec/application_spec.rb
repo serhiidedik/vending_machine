@@ -66,8 +66,8 @@ RSpec.describe VendingMachine::Application do
     end
 
     it 'routes numeric input to composer as a coin' do
-      mock_input('50')
-      expect(composer).to receive(:add_coin).with(50)
+      mock_input('0.50')
+      expect(composer).to receive(:add_coin).with('0.50')
       app.run
     end
 
