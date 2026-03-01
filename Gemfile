@@ -7,3 +7,4 @@ gem 'rspec'
 gem 'rubocop'
 gem 'rubocop-rspec'
 gem 'simplecov', require: false
+gem 'simplecov-small-badge', require: false
