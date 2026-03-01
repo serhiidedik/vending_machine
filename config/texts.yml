@@ -26,7 +26,7 @@ messages:
   exit: 'Closing app'
 instructions:
   selection: "Select product e.g.: 'cola'"
-  insertion: "Insert coins e.g.: '25/.../500'"
+  insertion: "Insert coins e.g.: '0.25/0.50/1/2/3/5'"
   buy: "Finish operation e.g.: 'buy'"
   cancel: "Cancel operation e.g.: 'cancel' / 'exit'"
   menu: "Show menu e.g.: 'menu'"

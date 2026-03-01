@@ -14,17 +14,17 @@ RSpec.describe VendingMachine::Interactions::Composer do
       before { allow(till).to receive(:acceptable_denomination?).with(25).and_return(true) }
 
       it 'returns success status' do
-        result = composer.add_coin(25)
+        result = composer.add_coin(0.25)
         expect(result).to include(status: :success, message: :insert, data: 25)
       end
 
       it 'updates the inserted balance' do
-        expect { composer.add_coin(25) }.to change { composer.current_balance }.by(25)
+        expect { composer.add_coin(0.25) }.to change { composer.current_balance }.by(25)
       end
     end
 
     context 'when denomination is not acceptable' do
-      before { allow(till).to receive(:acceptable_denomination?).with(13).and_return(false) }
+      before { allow(till).to receive(:acceptable_denomination?).with(1300).and_return(false) }
 
       it 'returns error status and does not update balance' do
         result = composer.add_coin(13)

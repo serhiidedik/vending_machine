@@ -136,9 +136,13 @@ module VendingMachine
       end
 
       def format_product_with_change(product:, change:)
+        product_text = format_product(product)
+
+        return product_text unless change.any?
+
         coins_list = change.flat_map { |denomination, count| [format_money(denomination)] * count }
 
-        "#{format_product(product)}, #{texts.messages.change} #{coins_list.join(', ')}"
+        "#{product_text}, #{texts.messages.change} #{coins_list.join(', ')}"
       end
     end
   end
